@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard | Advanced Phishing Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1>PhishGuard</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Advanced Phishing Detection</h2>
+            <p>Protect yourself from malicious websites with our state-of-the-art phishing detection technology. Enter any URL to analyze its safety and preview its content.</p>
+        </section>
+
+        <section class="card">
+            <h3><i class="fas fa-search"></i> Check URL Safety</h3>
+            <div class="input-group">
+                <input type="text" id="url-input" placeholder="Enter URL to analyze (e.g., https://example.com)">
+                <button id="analyze-btn">Analyze</button>
+            </div>
+            
+            <div id="results" class="results">
+                <div class="result-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3 id="result-title">Analysis Result</h3>
+                </div>
+                <p id="result-text">This website appears to be safe based on our analysis.</p>
+                <div id="result-details">
+                    <p><strong>Domain:</strong> <span id="domain-info">example.com</span></p>
+                    <p><strong>SSL Certificate:</strong> <span id="ssl-info">Valid</span></p>
+                    <p><strong>Reputation:</strong> <span id="reputation-info">Good</span></p>
+                    <p><strong>Blacklist Status:</strong> <span id="blacklist-info">Not listed</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="preview-section">
+            <h3><i class="fas fa-eye"></i> Website Preview</h3>
+            <p>Preview the content of the analyzed website below:</p>
+            
+            <div class="preview-container">
+                <div class="preview-header">
+                    <div class="preview-buttons">
+                        <div class="preview-button red"></div>
+                        <div class="preview-button yellow"></div>
+                        <div class="preview-button green"></div>
+                    </div>
+                    <div class="preview-url" id="preview-url">No URL analyzed</div>
+                </div>
+                <div class="preview-content" id="preview-content">
+                    <div class="preview-placeholder">
+                        <i class="fas fa-globe"></i>
+                        <p>Enter a URL and click "Analyze" to preview website content</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Real-time Database</h4>
+                        <p>Our system checks URLs against an extensive, continuously updated database of known phishing sites.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>AI-Powered Analysis</h4>
+                        <p>Advanced machine learning algorithms detect subtle phishing patterns that traditional methods might miss.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Lightning Fast</h4>
+                        <p>Get comprehensive security analysis results in seconds without compromising accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 PhishGuard. All rights reserved. | Protecting users from phishing threats worldwide.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
